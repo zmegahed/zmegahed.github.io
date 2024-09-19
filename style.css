@@ -1,0 +1,14 @@
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Portfolio Item */
+.portfolio-item {
+    margin-bottom: 20px;
+}
