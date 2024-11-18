@@ -1,105 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <!-- Linking external CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeyad Megahed - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-        <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+  <nav class="navbar navbar-expand-lg black-bg">
+    <div class="container about-text">
+      <a class="navbar-brand" href="#">ZM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="#career">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+		<button class="btn btn-custom ms-3">Resume</button>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I'm a web developer passionate about creating modern, responsive websites.</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="py-5" id="career">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi, I'm a web developer with experience in building modern and dynamic websites. I love coding and enjoy learning new technologies to improve my skills.</p>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="py-5 bg-light" id="education">
-        <div class="container pb-3">
-            <h2>My Professional Work</h2>
-            <div class="row mt-3">
-                <div class="col-md-4 portfolio-item">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Description of project 1.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 portfolio-item">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Description of project 2.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 portfolio-item">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Description of project 3.</p>
-                        </div>
-                    </div>
+  <section id="hero" class="section d-flex align-items-center text-center black-bg" style="height: 50vh;">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-12">
+                <p>👋</p>
+				<p class="header fade-in-left">Hello There, My Name is <b>Zeyad</b></p>
+				<div class="typewriter-container">
+                    <span class="typewrite " data-type='["I am a <b>Web Designer</b> and <b>Front End Developer</b>"]'></span>
                 </div>
             </div>
+            </div>
         </div>
-    </section>
+</section>
 
-    <!-- Contact Section -->
-    <section class="py-5" id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+
+
+   <section id="about" class="section about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <h2 class="about-heading fade-in-element">About Me</h2>
+                <p class="about-text fade-in-element">
+                    Hi! I'm Zeyad Megahed, a passionate web developer and designer based in the DMV. I love crafting beautiful and functional websites using modern web technologies. My journey in web development started when I was in Highschool, and ever since, I've been dedicated to building solutions that not only look great but also provide a seamless user experience.
+                </p>
+                <p class="about-text fade-in-element">
+                    When I'm not coding, you can find me exploring new technologies, Watching Soccer, or enjoying some quality time outdoors. I'm always eager to learn new things and take on exciting challenges. Let's build something amazing together!
+                </p>
+				<div class="carousel-container fade-in-element">
+				<div class="carousel-content">
+					<span class="word"><i class="fab fa-js"></i>JavaScript</span>
+					<span class="word"><i class="fab fa-html5"></i>HTML</span>
+					<span class="word"><i class="fab fa-css3-alt"></i>CSS</span>
+					<span class="word"><i class="fab fa-php"></i>PHP</span>
+					<span class="word"><i class="fa fa-file-code"></i>XML</span>
+					<span class="word"><i class="fab fa-wordpress"></i>WordPress</span>
+					<span class="word"><i class="fab fa-angular"></i>AngularJS</span>
+					<span class="word"><i class="fa fa-database"></i>MySQL</span>
+					<span class="word"><i class="fa fa-file-alt"></i>TypeScript</span>
+					<span class="word"><i class="fab fa-react"></i>ReactJS</span>
+					<span class="word"><i class="fab fa-python"></i>Python</span>
+					<span class="word"><i class="fa fa-palette"></i>Adobe Creative Suite</span>
+					<!-- Duplicate content for seamless scrolling -->
+					<span class="word"><i class="fab fa-js"></i>JavaScript</span>
+					<span class="word"><i class="fab fa-html5"></i>HTML</span>
+					<span class="word"><i class="fab fa-css3-alt"></i>CSS</span>
+					<span class="word"><i class="fab fa-php"></i>PHP</span>
+					<span class="word"><i class="fa fa-file-code"></i>XML</span>
+					<span class="word"><i class="fab fa-wordpress"></i>WordPress</span>
+					<span class="word"><i class="fab fa-angular"></i>AngularJS</span>
+					<span class="word"><i class="fa fa-database"></i>MySQL</span>
+					<span class="word"><i class="fa fa-file-alt"></i>TypeScript</span>
+					<span class="word"><i class="fab fa-react"></i>ReactJS</span>
+					<span class="word"><i class="fab fa-python"></i>Python</span>
+					<span class="word"><i class="fa fa-palette"></i>Adobe Creative Suite</span>
+				</div>
+				</div>
+            </div>
         </div>
-    </section>
+    </div>
+	
+</section>
+	
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script> <!-- Linking external JavaScript -->
+    <section id="career" class="py-5">
+	<div class="container">
+        <h2 class="section-title">
+            My Career
+        </h2>
+        
+        <div class="row">
+            <div class="col-md-3">
+                <div class="company-nav" id="company-nav">
+                    <button class="nav-link active" onclick="showContent('carefirst', this)">CareFirst</button>
+                    <button class="nav-link" onclick="showContent('mic', this)">Madina Islamic Center</button>
+                    <button class="nav-link" onclick="showContent('college', this)">College</button>
+                </div>
+            </div>
+            
+            <div class="col-md-9">
+                <div id="content-container">
+                    <div id="carefirst" class="content-section active">
+                        <h3 class="job-title">
+                            Web Designer / Web Developer Intern <span class="company-name">@ CareFirst</span>
+                        </h3>
+                        <p class="job-duration">January 2023 – August 2024</p>
+                        <div class="job-description">
+                            Designed and maintained 15+ responsive web pages using HTML, CSS, JavaScript, and Adobe Dreamweaver. Optimized for various screen sizes, resulting in around a 20-30% increase in user engagement
+                        </div>
+                        <div class="job-description">
+                            Conducted weekly usability testing on 8+ web pages, identifying user experience issues and implementing solutions that improved page load times by 30-40%
+                        </div>
+                        <div class="job-description">
+                            Created high-fidelity mockups, wireframes, and prototypes using Adobe Photoshop, Illustrator, and Sketch
+                        </div>
+                        <div class="job-description">
+                            Collaborated with a team of 4 senior developers to revamp an existing website, enhancing its visual appeal and improving user navigation through wireframing, prototyping, and iterative design
+                        </div>
+						<div class="job-description">
+                            Ensured digital content accessibility by applying 508 tagging techniques to web pages, documents, and multimedia assets
+                        </div>
+						<div class="job-description">
+                            Designed and coded responsive HTML email templates and weekly campaigns within the Salesforce Marketing Cloud platform, ensuring a 100% brand compliance rate
+                        </div>
+                    </div>
+
+                    <div id="mic" class="content-section">
+                        <h3 class="job-title">
+                            Web Designer / Team Lead <span class="company-name">@ Madina Islamic Center</span>
+                        </h3>
+                        <p class="job-duration">July 2023 – May 2024</p>
+                        <div class="job-description">
+                            Led the redesign of Madina Islamic Center’s outdated website to improve user experience and modernize its online presence
+                        </div>
+                        <div class="job-description">
+                            Integrated essential features and functionality using WordPress and Elementor plugins, including a booking calendar and donation forms
+                        </div>
+                        <div class="job-description">
+                            Provided client training and support on WordPress usage and content management, empowering them to maintain and update the website independently
+                        </div>
+                    </div>
+
+                    <div id="college" class="content-section">
+                        <h3 class="job-title">
+                            Undergraduate Student <span class="company-name">@ George Mason University</span>
+                        </h3>
+						<p class="job-duration">Graduated May 2024</p>
+                        <div class="job-description">
+                            Graduated with a Bachelor of Science In Information Technology, Concentration in Web Development 
+                        </div>
+                        <div class="job-description">
+                            GPA: 3.7/4.0 : Cum Laude, Dean’s List
+                        </div>
+						<div class="job-description">
+                            Relevant Coursework: Front-End Web Development, Web Development using Content Management Systems, Web Server Administration, Multimedia and Web Design, Data Structures and Algorithms in Python
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</section>
+  
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="mb-5 about-heading">Projects</h2>
+    <div class="row gy-4">
+      <div class="col-12 col-md-12">
+        <div class="project-card d-flex">
+          <a href="#" class="project-img-link">
+            <img src="fitnessmeals.png" class="project-img" alt="Project 1" />
+          </a>
+          <div class="project-info">
+            <h3>Fitness Meals for Athletes</h3>
+            <p>WordPress Website</p>
+            <p class="project-description">A WordPress website for athletes to find and order fitness-focused meals.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12">
+        <div class="project-card d-flex">
+           <a href="#" class="project-img-link">
+            <img src="madina.png" class="project-img" alt="Project 2" />
+          </a>
+          <div class="project-info">
+            <h3>Madina Islamic Center Rework</h3>
+            <p>WordPress using Elementor site</p>
+            <p class="project-description">A rework of the Madina Islamic Center Website using Wordpres and Elementor</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12">
+        <div class="project-card d-flex">
+          <a href="#" class="project-img-link">
+            <img src="stansberry.png" class="project-img" alt="Project 3" />
+          </a>
+          <div class="project-info">
+            <h3>Stansberry One Page</h3>
+            <p>One Page Flyer in HTML and CSS</p>
+            <p class="project-description">A Flyer made in HTML and CSS for Stansberry</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="about-heading mb-4">Get In Touch</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-12 my-auto">
+		 <div class="social-section">
+			<div class="decorative-line" style="--direction: right"></div>
+			<div class="social-container">
+			<a href="https://github.com/zmegahed" class="social-link github" aria-label="GitHub Profile">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/zeyad-megahed/" class="social-link linkedin" aria-label="LinkedIn Profile">
+				<i class="fab fa-linkedin-in"></i>
+			</a>
+			</div>
+		</div>
+		<div class="contact-container">
+		<a href="mailto:zeyadfouad34@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Zeyad%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%20about%20" 
+       class="email-button" 
+       aria-label="Send me an email">
+      <i class="far fa-envelope"></i>
+      Contact Me
+		</a>
+		</div>
+		<div class="decorative-line" style="--direction: left"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="black-bg text-white text-center py-3">
+    <p class="footerp">&copy; 2024 Made by Zeyad Megahed. All Rights Reserved.</p>
+  </footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>
