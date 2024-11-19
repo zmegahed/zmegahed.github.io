@@ -33,11 +33,12 @@ footer {
 
 .navbar-brand {
     font-weight: bold;
-	color: #6B705C;
+   color: #6B705C;
 }
 
 .nav-link {
-    color: #6B705C; 
+    color: #6B705C;
+    font-size: 14px;
 }
 
 .nav-link:hover {
