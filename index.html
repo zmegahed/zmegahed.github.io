@@ -39,28 +39,64 @@
     </div>
   </nav>
 
-  <section id="hero" class="section d-flex align-items-center text-center black-bg" style="height: 50vh;">
+  <section id="hero" class="section d-flex align-items-center text-center" style="min-height: 100vh; background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);">
     <div class="container">
         <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-md-12">
-                <p>👋</p>
-				<p class="header fade-in-left">Hello There, My Name is <b>Zeyad</b></p>
-				<div class="typewriter-container">
-                    <span class="typewrite " data-type='["I am a <b>Web Designer</b> and <b>Front End Developer</b>"]'></span>
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="hero-content">
+                    <!-- Animated emoji with bounce effect -->
+                    <div class="welcome-emoji animate-bounce">
+                        <span style="font-size: 3rem;">👋</span>
+                    </div>
+                    
+                    <!-- Name introduction with gradient text -->
+                    <h1 class="hero-title mb-4">
+                        <span class="greeting">Hello There, I'm</span>
+                        <span class="name gradient-text">Zeyad</span>
+                    </h1>
+
+                    <!-- Role description with typewriter effect -->
+                    <div class="typewriter-container mb-5">
+                        <span class="typewrite gradient-text" data-type='[
+                            "I am a <b>Web Designer</b>",
+                            "I am a <b>Front End Developer</b>",
+                            "I create <b>Responsive Websites</b>",
+                            "I build <b>User Experiences</b>"
+                        ]'></span>
+                        <span class="cursor"></span>
+                    </div>
+
+                    <!-- Enhanced social links -->
+                    <div class="social-section">
+                        <div class="social-container">
+                            <a href="https://github.com/zmegahed" 
+                               class="social-link github" 
+                               aria-label="GitHub Profile"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/zeyad-megahed/" 
+                               class="social-link linkedin" 
+                               aria-label="LinkedIn Profile"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Call to action button -->
+                    <div class="cta-container mt-5">
+                        <a href="#portfolio" class="cta-button">
+                            View My Work
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
                 </div>
-		    <div class="social-section">
-			<div class="social-container">
-			<a href="https://github.com/zmegahed" class="social-link github" aria-label="GitHub Profile">
-				<i class="fab fa-github"></i>
-			</a>
-			<a href="https://www.linkedin.com/in/zeyad-megahed/" class="social-link linkedin" aria-label="LinkedIn Profile">
-				<i class="fab fa-linkedin-in"></i>
-			</a>
-			</div>
-		</div>
-            </div>
             </div>
         </div>
+    </div>
 </section>
 
 
