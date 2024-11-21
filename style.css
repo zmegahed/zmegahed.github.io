@@ -158,18 +158,20 @@ footer {
 
 .greeting {
     display: block;
-    font-size: 0.9em;
+    font-size: 28px;
     color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
 .name {
-    font-size: 1em;
+    font-size: 22px;
+    display: inline-block;
+    animation: fontChange 2s infinite;
 }
 
 /* Typewriter effect styling */
 .typewriter-container {
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-size: clamp(14px, 3vw, 18px);
     min-height: 3.6rem;
     margin: 2rem 0;
 }
@@ -246,11 +248,6 @@ footer {
         font-family: 'Abril Fatface', cursive;
         transform: scale(1);
     }
-}
-
-.header b {
-    display: inline-block;
-    animation: fontChange 2s infinite;
 }
 
 
