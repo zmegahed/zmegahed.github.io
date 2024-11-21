@@ -159,12 +159,13 @@ footer {
 .greeting {
     display: block;
     font-size: 28px;
-    color: #ffffff;
+    color: #6B705C;
     margin-bottom: 0.5rem;
 }
 
 .name {
     font-size: 22px;
+    color: #6B705C;
     display: inline-block;
     animation: fontChange 2s infinite;
 }
