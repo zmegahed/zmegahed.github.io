@@ -140,7 +140,6 @@ footer {
     position: relative;
 }
 
-/* Animated emoji */
 .animate-bounce {
     animation: bounce 2s infinite;
 }
@@ -158,21 +157,20 @@ footer {
 
 .greeting {
     display: block;
-    font-size: 28px;
+    font-size: 32px;
     color: #6B705C;
     margin-bottom: 0.5rem;
 }
 
 .name {
-    font-size: 22px;
+    font-size: 26px;
     color: #6B705C;
     display: inline-block;
     animation: fontChange 2s infinite;
 }
 
-/* Typewriter effect styling */
 .typewriter-container {
-    font-size: clamp(14px, 3vw, 18px);
+    font-size: clamp(18px, 3vw, 22px);
     min-height: 3.6rem;
     margin: 2rem 0;
 }
