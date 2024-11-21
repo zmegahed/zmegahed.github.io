@@ -135,6 +135,97 @@ footer {
 	color: #FFFFF0;
 }
 
+.hero-content {
+    padding: 2rem;
+    position: relative;
+}
+
+/* Animated emoji */
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Gradient text effect */
+.gradient-text {
+    background: linear-gradient(135deg, #4E6E5D 0%, #7FA189 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* Hero title styling */
+.hero-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1.5rem;
+}
+
+.greeting {
+    display: block;
+    font-size: 0.9em;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.name {
+    font-size: 1.2em;
+}
+
+/* Typewriter effect styling */
+.typewriter-container {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    min-height: 3.6rem;
+    margin: 2rem 0;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background: #4E6E5D;
+    margin-left: 4px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #4E6E5D;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(78, 110, 93, 0.3);
+}
+
+.cta-button:hover {
+    background: #5a8575;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(78, 110, 93, 0.4);
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 1rem;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
 /* Font Change */
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display&family=Roboto+Slab&family=Space+Mono&family=Ubuntu&display=swap');
