@@ -127,6 +127,32 @@ input::placeholder {
     margin: 0 auto;
 }
 
+@media (min-width: 2000px) {
+    .headerpadding {
+        padding-right: 50%;  /* Increased padding for ultra-wide */
+        padding-top: 50px;
+        min-height: 450px;  /* Ensure enough space for content */
+    }
+    
+    .report-section {
+        padding-top: 2rem;  /* Add space between header and report section */
+        clear: both;  /* Ensure it starts below header content */
+    }
+
+    .header {
+        max-width: 1200px;  /* Limit text width */
+    }
+
+    .headersub {
+        max-width: 1000px;  /* Limit text width */
+    }
+
+    form {
+        margin-bottom: 2rem;  /* Extra space after form */
+        max-width: 800px;  /* Limit form width */
+    }
+}
+
 /* Extra large screens */
 @media (min-width: 1500px) {
     .headerpadding {
